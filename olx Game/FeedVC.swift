@@ -112,25 +112,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             UIView.animate(withDuration: 0.3) {
                 self.HeaderView.transform = CGAffineTransform(translationX: 0, y: -50)
             }
-            
-            /*
-            UIView.animate(withDuration: 0.4, delay: 0, options: [UIViewAnimationOptions.curveEaseInOut, UIViewAnimationOptions.beginFromCurrentState], animations: {
-                //self.HeaderView.transform = CGAffineTransform(scaleX: 1, y: 1)
-                self.HeaderView.alpha = 0.2
-                self.HeaderView.frame = CGRect(x: xPosition, y: -yPosition, width: width, height: 75) //(height) var or 75
-                self.hidden = true
-                self.HeaderView.isHidden = true
-            }, completion: { (completed) in
-                //self.view.setNeedsUpdateConstraints()
-            })
-            UIView.animate(withDuration: 0.3, animations: {
-                self.HeaderView.transform = CGAffineTransform(translationX: 0, y: -50)
-            }, completion: { (completed) in
-                if completed == true {
-                self.HeaderView.isHidden = true
-                }
-            })
-             */
         }
         else { //if currentOffset.y < self.lastContentOffset.y
             print("Upward - things goes down")
@@ -150,17 +131,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                                               height: self.view.bounds.height-(50)-height)//"-height" zawed
                 self.HeaderView.alpha = 1
             })
-            
-            /*
-            UIView.animate(withDuration: 0.4, animations: {
-                //self.HeaderView.transform = CGAffineTransform(scaleX: 1, y: 0)
-                self.HeaderView.frame = CGRect(x: xPosition, y: 0, width: width, height: height)
-                self.hidden = false
-                self.HeaderView.isHidden = false
-            }, completion: { (bool) in
-                //self.view.setNeedsUpdateConstraints()
-            })
-            */
+
         }
         //view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[HeaderView]-[TableView]", options: [], metrics: nil, views: viewsDictionary))
         //tableView.updateConstraints()
@@ -237,7 +208,7 @@ extension FeedVC {
         }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return postss.count
+        return postss.count ?? 0
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
