@@ -7,12 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C59FA32ABC49B43FE5DB63B /* Pods_olx_GameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE59BE05D57B539C47AC55D /* Pods_olx_GameTests.framework */; };
+		1E3709B61E89E9A000FEFA6A /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709AA1E89E9A000FEFA6A /* AkiraTextField.swift */; };
+		1E3709B71E89E9A000FEFA6A /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709AB1E89E9A000FEFA6A /* HoshiTextField.swift */; };
+		1E3709B81E89E9A000FEFA6A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E3709AC1E89E9A000FEFA6A /* Info.plist */; };
+		1E3709B91E89E9A000FEFA6A /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709AD1E89E9A000FEFA6A /* IsaoTextField.swift */; };
+		1E3709BA1E89E9A000FEFA6A /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709AE1E89E9A000FEFA6A /* JiroTextField.swift */; };
+		1E3709BB1E89E9A000FEFA6A /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709AF1E89E9A000FEFA6A /* KaedeTextField.swift */; };
+		1E3709BC1E89E9A000FEFA6A /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709B01E89E9A000FEFA6A /* MadokaTextField.swift */; };
+		1E3709BD1E89E9A000FEFA6A /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709B11E89E9A000FEFA6A /* MinoruTextField.swift */; };
+		1E3709BE1E89E9A000FEFA6A /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709B31E89E9A000FEFA6A /* TextFieldEffects.swift */; };
+		1E3709BF1E89E9A000FEFA6A /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709B41E89E9A000FEFA6A /* YokoTextField.swift */; };
+		1E3709C01E89E9A000FEFA6A /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709B51E89E9A000FEFA6A /* YoshikoTextField.swift */; };
+		1E3709C21E8A05DC00FEFA6A /* sideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709C11E8A05DB00FEFA6A /* sideBar.swift */; };
+		1E3709C41E8A16D100FEFA6A /* sideBarCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709C31E8A16D100FEFA6A /* sideBarCells.swift */; };
+		1E4087CE1E820EE200589BD8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4087CD1E820EE100589BD8 /* Post.swift */; };
 		1E560B8B1E79860E000A3D4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E560B8A1E79860E000A3D4C /* AppDelegate.swift */; };
-		1E560B8D1E79860E000A3D4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E560B8C1E79860E000A3D4C /* ViewController.swift */; };
+		1E560B8D1E79860E000A3D4C /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E560B8C1E79860E000A3D4C /* SignInVC.swift */; };
 		1E560B901E79860E000A3D4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E560B8E1E79860E000A3D4C /* Main.storyboard */; };
 		1E560B921E79860E000A3D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E560B911E79860E000A3D4C /* Assets.xcassets */; };
 		1E560B951E79860E000A3D4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E560B931E79860E000A3D4C /* LaunchScreen.storyboard */; };
 		1E560BA01E79860E000A3D4C /* olx_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E560B9F1E79860E000A3D4C /* olx_GameTests.swift */; };
+		1E560BAF1E7990A0000A3D4C /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E560BAE1E7990A0000A3D4C /* FancyButton.swift */; };
+		1E560BB11E7991D3000A3D4C /* DropShadow Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E560BB01E7991D3000A3D4C /* DropShadow Protocol.swift */; };
+		1E560BB31E799265000A3D4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E560BB21E799265000A3D4C /* Constants.swift */; };
+		1E560BB51E799613000A3D4C /* FancyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E560BB41E799613000A3D4C /* FancyTextField.swift */; };
+		1E560BB71E79CC2B000A3D4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E560BB61E79CC2B000A3D4C /* GoogleService-Info.plist */; };
+		1E5EDE061E8683C900F48760 /* tableUICollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5EDE051E8683C900F48760 /* tableUICollectionCell.swift */; };
+		1E5EDE091E8685DB00F48760 /* TableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5EDE081E8685DB00F48760 /* TableCollectionViewCell.swift */; };
+		1E7C3A2A1E8309FB000A2C57 /* AddAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7C3A291E8309FA000A2C57 /* AddAdVC.swift */; };
+		1EC11C711E7A3DCF00FF1DAF /* Extn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC11C701E7A3DCF00FF1DAF /* Extn.swift */; };
+		1EFF0AFD1E7C034C0095CD8E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF0AFC1E7C034C0095CD8E /* DataService.swift */; };
+		1EFF0AFF1E7C61DB0095CD8E /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF0AFE1E7C61DB0095CD8E /* FeedVC.swift */; };
+		1EFF0B011E7C75560095CD8E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF0B001E7C75550095CD8E /* PostCell.swift */; };
+		53AF07CD9BDB5984275FEFBB /* Pods_olx_Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437DFADDB40971EE3E3A110B /* Pods_olx_Game.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +54,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E3709AA1E89E9A000FEFA6A /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
+		1E3709AB1E89E9A000FEFA6A /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		1E3709AC1E89E9A000FEFA6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3709AD1E89E9A000FEFA6A /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
+		1E3709AE1E89E9A000FEFA6A /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
+		1E3709AF1E89E9A000FEFA6A /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
+		1E3709B01E89E9A000FEFA6A /* MadokaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadokaTextField.swift; sourceTree = "<group>"; };
+		1E3709B11E89E9A000FEFA6A /* MinoruTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinoruTextField.swift; sourceTree = "<group>"; };
+		1E3709B21E89E9A000FEFA6A /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		1E3709B31E89E9A000FEFA6A /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		1E3709B41E89E9A000FEFA6A /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
+		1E3709B51E89E9A000FEFA6A /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
+		1E3709C11E8A05DB00FEFA6A /* sideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideBar.swift; sourceTree = "<group>"; };
+		1E3709C31E8A16D100FEFA6A /* sideBarCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideBarCells.swift; sourceTree = "<group>"; };
+		1E4087CD1E820EE100589BD8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1E560B871E79860E000A3D4C /* olx Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "olx Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E560B8A1E79860E000A3D4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E560B8C1E79860E000A3D4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E560B8C1E79860E000A3D4C /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		1E560B8F1E79860E000A3D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E560B911E79860E000A3D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E560B941E79860E000A3D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +79,24 @@
 		1E560B9B1E79860E000A3D4C /* olx GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "olx GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E560B9F1E79860E000A3D4C /* olx_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = olx_GameTests.swift; sourceTree = "<group>"; };
 		1E560BA11E79860E000A3D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E560BAE1E7990A0000A3D4C /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		1E560BB01E7991D3000A3D4C /* DropShadow Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropShadow Protocol.swift"; sourceTree = "<group>"; };
+		1E560BB21E799265000A3D4C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1E560BB41E799613000A3D4C /* FancyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyTextField.swift; sourceTree = "<group>"; };
+		1E560BB61E79CC2B000A3D4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E5EDE051E8683C900F48760 /* tableUICollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableUICollectionCell.swift; sourceTree = "<group>"; };
+		1E5EDE081E8685DB00F48760 /* TableCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCollectionViewCell.swift; sourceTree = "<group>"; };
+		1E7C3A291E8309FA000A2C57 /* AddAdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAdVC.swift; sourceTree = "<group>"; };
+		1EC11C701E7A3DCF00FF1DAF /* Extn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extn.swift; sourceTree = "<group>"; };
+		1EFF0AFC1E7C034C0095CD8E /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		1EFF0AFE1E7C61DB0095CD8E /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		1EFF0B001E7C75550095CD8E /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		437DFADDB40971EE3E3A110B /* Pods_olx_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_olx_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43EAF45F9785EB31BD87CBB1 /* Pods-olx Game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-olx Game.release.xcconfig"; path = "Pods/Target Support Files/Pods-olx Game/Pods-olx Game.release.xcconfig"; sourceTree = "<group>"; };
+		5AE59BE05D57B539C47AC55D /* Pods_olx_GameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_olx_GameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BD3F59FA6C1DC76B662EDF9 /* Pods-olx Game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-olx Game.debug.xcconfig"; path = "Pods/Target Support Files/Pods-olx Game/Pods-olx Game.debug.xcconfig"; sourceTree = "<group>"; };
+		7BD9954410E813E511C7C1C5 /* Pods-olx GameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-olx GameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-olx GameTests/Pods-olx GameTests.release.xcconfig"; sourceTree = "<group>"; };
+		E6B5439ABA8E43984D76F882 /* Pods-olx GameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-olx GameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-olx GameTests/Pods-olx GameTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AF07CD9BDB5984275FEFBB /* Pods_olx_Game.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +112,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C59FA32ABC49B43FE5DB63B /* Pods_olx_GameTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F0BEE26B15FFA85120AACAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BD3F59FA6C1DC76B662EDF9 /* Pods-olx Game.debug.xcconfig */,
+				43EAF45F9785EB31BD87CBB1 /* Pods-olx Game.release.xcconfig */,
+				E6B5439ABA8E43984D76F882 /* Pods-olx GameTests.debug.xcconfig */,
+				7BD9954410E813E511C7C1C5 /* Pods-olx GameTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1E3709A91E89E99F00FEFA6A /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				1E3709AA1E89E9A000FEFA6A /* AkiraTextField.swift */,
+				1E3709AB1E89E9A000FEFA6A /* HoshiTextField.swift */,
+				1E3709AC1E89E9A000FEFA6A /* Info.plist */,
+				1E3709AD1E89E9A000FEFA6A /* IsaoTextField.swift */,
+				1E3709AE1E89E9A000FEFA6A /* JiroTextField.swift */,
+				1E3709AF1E89E9A000FEFA6A /* KaedeTextField.swift */,
+				1E3709B01E89E9A000FEFA6A /* MadokaTextField.swift */,
+				1E3709B11E89E9A000FEFA6A /* MinoruTextField.swift */,
+				1E3709B21E89E9A000FEFA6A /* TextFieldEffects.h */,
+				1E3709B31E89E9A000FEFA6A /* TextFieldEffects.swift */,
+				1E3709B41E89E9A000FEFA6A /* YokoTextField.swift */,
+				1E3709B51E89E9A000FEFA6A /* YoshikoTextField.swift */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
 		1E560B7E1E79860D000A3D4C = {
 			isa = PBXGroup;
 			children = (
 				1E560B891E79860E000A3D4C /* olx Game */,
 				1E560B9E1E79860E000A3D4C /* olx GameTests */,
 				1E560B881E79860E000A3D4C /* Products */,
+				0F0BEE26B15FFA85120AACAE /* Pods */,
+				1E3709A91E89E99F00FEFA6A /* TextFieldEffects */,
+				A0A37380356CFCB035ABF1BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +173,16 @@
 		1E560B891E79860E000A3D4C /* olx Game */ = {
 			isa = PBXGroup;
 			children = (
+				1EFF0AFB1E7C032C0095CD8E /* Services */,
+				1E560BAD1E799060000A3D4C /* Utli */,
+				1E560BAA1E799041000A3D4C /* Model */,
+				1E560BAB1E799046000A3D4C /* View */,
+				1E560BAC1E79904D000A3D4C /* Controller */,
 				1E560B8A1E79860E000A3D4C /* AppDelegate.swift */,
-				1E560B8C1E79860E000A3D4C /* ViewController.swift */,
 				1E560B8E1E79860E000A3D4C /* Main.storyboard */,
 				1E560B911E79860E000A3D4C /* Assets.xcassets */,
 				1E560B931E79860E000A3D4C /* LaunchScreen.storyboard */,
+				1E560BB61E79CC2B000A3D4C /* GoogleService-Info.plist */,
 				1E560B961E79860E000A3D4C /* Info.plist */,
 			);
 			path = "olx Game";
@@ -96,6 +197,73 @@
 			path = "olx GameTests";
 			sourceTree = "<group>";
 		};
+		1E560BAA1E799041000A3D4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E4087CD1E820EE100589BD8 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1E560BAB1E799046000A3D4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E560BAE1E7990A0000A3D4C /* FancyButton.swift */,
+				1E560BB41E799613000A3D4C /* FancyTextField.swift */,
+				1EFF0B001E7C75550095CD8E /* PostCell.swift */,
+				1E5EDE051E8683C900F48760 /* tableUICollectionCell.swift */,
+				1E5EDE071E86858900F48760 /* View Insde View */,
+				1E3709C11E8A05DB00FEFA6A /* sideBar.swift */,
+				1E3709C31E8A16D100FEFA6A /* sideBarCells.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1E560BAC1E79904D000A3D4C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E560B8C1E79860E000A3D4C /* SignInVC.swift */,
+				1EFF0AFE1E7C61DB0095CD8E /* FeedVC.swift */,
+				1E7C3A291E8309FA000A2C57 /* AddAdVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1E560BAD1E799060000A3D4C /* Utli */ = {
+			isa = PBXGroup;
+			children = (
+				1E560BB01E7991D3000A3D4C /* DropShadow Protocol.swift */,
+				1E560BB21E799265000A3D4C /* Constants.swift */,
+				1EC11C701E7A3DCF00FF1DAF /* Extn.swift */,
+			);
+			name = Utli;
+			sourceTree = "<group>";
+		};
+		1E5EDE071E86858900F48760 /* View Insde View */ = {
+			isa = PBXGroup;
+			children = (
+				1E5EDE081E8685DB00F48760 /* TableCollectionViewCell.swift */,
+			);
+			name = "View Insde View";
+			sourceTree = "<group>";
+		};
+		1EFF0AFB1E7C032C0095CD8E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1EFF0AFC1E7C034C0095CD8E /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		A0A37380356CFCB035ABF1BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				437DFADDB40971EE3E3A110B /* Pods_olx_Game.framework */,
+				5AE59BE05D57B539C47AC55D /* Pods_olx_GameTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +271,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E560BA41E79860E000A3D4C /* Build configuration list for PBXNativeTarget "olx Game" */;
 			buildPhases = (
+				570DBE00A8D1B5F6D8298F96 /* [CP] Check Pods Manifest.lock */,
 				1E560B831E79860E000A3D4C /* Sources */,
 				1E560B841E79860E000A3D4C /* Frameworks */,
 				1E560B851E79860E000A3D4C /* Resources */,
+				5C2B96FB35A90D69C4195DAB /* [CP] Embed Pods Frameworks */,
+				AA90F5B548A77AD29841ECF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +291,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E560BA71E79860E000A3D4C /* Build configuration list for PBXNativeTarget "olx GameTests" */;
 			buildPhases = (
+				91FB3471D07B38BE44897864 /* [CP] Check Pods Manifest.lock */,
 				1E560B971E79860E000A3D4C /* Sources */,
 				1E560B981E79860E000A3D4C /* Frameworks */,
 				1E560B991E79860E000A3D4C /* Resources */,
+				7A5B915E513EEE6340FC635A /* [CP] Embed Pods Frameworks */,
+				8293638A43EF63D00A233C9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,6 +358,8 @@
 				1E560B951E79860E000A3D4C /* LaunchScreen.storyboard in Resources */,
 				1E560B921E79860E000A3D4C /* Assets.xcassets in Resources */,
 				1E560B901E79860E000A3D4C /* Main.storyboard in Resources */,
+				1E3709B81E89E9A000FEFA6A /* Info.plist in Resources */,
+				1E560BB71E79CC2B000A3D4C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,13 +372,130 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		570DBE00A8D1B5F6D8298F96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C2B96FB35A90D69C4195DAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-olx Game/Pods-olx Game-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A5B915E513EEE6340FC635A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-olx GameTests/Pods-olx GameTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8293638A43EF63D00A233C9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-olx GameTests/Pods-olx GameTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91FB3471D07B38BE44897864 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA90F5B548A77AD29841ECF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-olx Game/Pods-olx Game-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1E560B831E79860E000A3D4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E560B8D1E79860E000A3D4C /* ViewController.swift in Sources */,
+				1EFF0AFF1E7C61DB0095CD8E /* FeedVC.swift in Sources */,
+				1E3709BF1E89E9A000FEFA6A /* YokoTextField.swift in Sources */,
+				1E5EDE061E8683C900F48760 /* tableUICollectionCell.swift in Sources */,
+				1E4087CE1E820EE200589BD8 /* Post.swift in Sources */,
+				1E3709B71E89E9A000FEFA6A /* HoshiTextField.swift in Sources */,
+				1E560BB31E799265000A3D4C /* Constants.swift in Sources */,
+				1E7C3A2A1E8309FB000A2C57 /* AddAdVC.swift in Sources */,
+				1E3709C21E8A05DC00FEFA6A /* sideBar.swift in Sources */,
+				1E3709BB1E89E9A000FEFA6A /* KaedeTextField.swift in Sources */,
+				1E560B8D1E79860E000A3D4C /* SignInVC.swift in Sources */,
+				1E560BB11E7991D3000A3D4C /* DropShadow Protocol.swift in Sources */,
 				1E560B8B1E79860E000A3D4C /* AppDelegate.swift in Sources */,
+				1E3709BC1E89E9A000FEFA6A /* MadokaTextField.swift in Sources */,
+				1EC11C711E7A3DCF00FF1DAF /* Extn.swift in Sources */,
+				1E3709B61E89E9A000FEFA6A /* AkiraTextField.swift in Sources */,
+				1E3709BA1E89E9A000FEFA6A /* JiroTextField.swift in Sources */,
+				1E3709C41E8A16D100FEFA6A /* sideBarCells.swift in Sources */,
+				1E3709BE1E89E9A000FEFA6A /* TextFieldEffects.swift in Sources */,
+				1E3709C01E89E9A000FEFA6A /* YoshikoTextField.swift in Sources */,
+				1E560BAF1E7990A0000A3D4C /* FancyButton.swift in Sources */,
+				1E560BB51E799613000A3D4C /* FancyTextField.swift in Sources */,
+				1E3709B91E89E9A000FEFA6A /* IsaoTextField.swift in Sources */,
+				1E5EDE091E8685DB00F48760 /* TableCollectionViewCell.swift in Sources */,
+				1EFF0AFD1E7C034C0095CD8E /* DataService.swift in Sources */,
+				1EFF0B011E7C75560095CD8E /* PostCell.swift in Sources */,
+				1E3709BD1E89E9A000FEFA6A /* MinoruTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +558,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: mahmoud_smgl@hotmail.com (UU4TV5KL67)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: mahmoud_smgl@hotmail.com (UU4TV5KL67)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5PD448JSVP;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -315,9 +610,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: mahmoud_smgl@hotmail.com (UU4TV5KL67)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: mahmoud_smgl@hotmail.com (UU4TV5KL67)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5PD448JSVP;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -339,8 +636,10 @@
 		};
 		1E560BA51E79860E000A3D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD3F59FA6C1DC76B662EDF9 /* Pods-olx Game.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5PD448JSVP;
 				INFOPLIST_FILE = "olx Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -352,8 +651,10 @@
 		};
 		1E560BA61E79860E000A3D4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43EAF45F9785EB31BD87CBB1 /* Pods-olx Game.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5PD448JSVP;
 				INFOPLIST_FILE = "olx Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -365,6 +666,7 @@
 		};
 		1E560BA81E79860E000A3D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B5439ABA8E43984D76F882 /* Pods-olx GameTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -380,6 +682,7 @@
 		};
 		1E560BA91E79860E000A3D4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD9954410E813E511C7C1C5 /* Pods-olx GameTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +715,7 @@
 				1E560BA61E79860E000A3D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E560BA71E79860E000A3D4C /* Build configuration list for PBXNativeTarget "olx GameTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +724,7 @@
 				1E560BA91E79860E000A3D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,6 @@
+framework module DTImageScrollView {
+  umbrella header "DTImageScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}
