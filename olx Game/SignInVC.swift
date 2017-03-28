@@ -19,9 +19,7 @@ class SignInVC: UIViewController {
     @IBOutlet weak var emailTextField: FancyTextField!
     @IBOutlet weak var passwordTextField: FancyTextField!
     
-    // This constraint ties an element at zero points from the bottom layout guide
-    //@IBOutlet var keyboardHeightLayoutConstraint: NSLayoutConstraint?
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         //toolbar
@@ -30,32 +28,7 @@ class SignInVC: UIViewController {
         //done button
         emailTextField.changeReturnToDoneSMGL()
         passwordTextField.changeReturnToDoneSMGL()
-        
-        // Note that SO highlighting makes the new selector syntax (#selector()) look
-        // like a comment but it isn't one
-        //NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardNotification(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
-    /*
-    func keyboardNotification(notification: NSNotification) {
-        if let userInfo = notification.userInfo {
-            let endFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
-            let duration:TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
-            let animationCurveRawNSN = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber
-            let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIViewAnimationOptions.curveEaseInOut.rawValue
-            let animationCurve:UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
-            if (endFrame?.origin.y)! >= UIScreen.main.bounds.size.height {
-                self.keyboardHeightLayoutConstraint?.constant = 0.0
-            } else {
-                self.keyboardHeightLayoutConstraint?.constant = endFrame?.size.height ?? 0.0
-            }
-            UIView.animate(withDuration: duration,
-                           delay: TimeInterval(0),
-                           options: animationCurve,
-                           animations: { self.view.layoutIfNeeded() },
-                           completion: nil)
-        }
-    }*/
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -144,25 +117,6 @@ class SignInVC: UIViewController {
                             userData1["twitter_verified"] = "\(twitter_verified)" }
                         if let twitter_location = json["location"] {
                             userData1["twitter_location"] = "\(twitter_location)" }
-                        
-                        /*
-                        let userData = [
-                            "lastLogin": "\(self.getDateAndTimeSMGL())",
-                            "provider" : "\(credential.provider)",
-                            "twitter_profileImage": "\(json["profile_image_url"]! ?? empty)",
-                            
-                            "twitter_name": "\(json["name"]! ?? empty)",
-                            "twitter_email" : "\(json["email"] ?? empty)",
-                            "twitter_screen_name" : "\(json["screen_name"]! ?? empty)",
-                            "twitter_description" : "\(json["description"]! ?? empty)",
-                         
-                            "twitter_created_at" : "\(json["created_at"]! ?? empty)",
-                            "twitter_profile_banner_url" : "\(json["profile_banner_url"]! ?? empty)",
-                            
-                            "twitter_followers_count" : "\(json["followers_count"]! ?? empty)",
-                            "twitter_verified" : "\(json["verified"]! ?? empty)",
-                            "twitter_location" : "\(json["location"]! ?? empty)"
-                        ]*/
                         
                         self.firebaseAuth(credential, userData: userData1)
                     
@@ -312,26 +266,3 @@ class SignInVC: UIViewController {
         performSegue(withIdentifier: C.Segues.FromSignInToFeed.rawValue, sender: nil)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
