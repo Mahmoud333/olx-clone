@@ -37,7 +37,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
         //sidebar
-        sideBar.frame = CGRect(x: UIScreen.main.bounds.width, y: 20, width: 180, height: self.view.bounds.height)
+        sideBar.frame = CGRect(x: UIScreen.main.bounds.width, y: 20, width: 200, height: self.view.bounds.height)
         sideBar.layer.zPosition = 4
         //sideBar.center.y = self.view.center.y
         //sideBar.isHidden == true
@@ -153,7 +153,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 //self.sideBar.transform = CGAffineTransform(translationX: self.view.bounds.width-180, y: 0)
                 self.sideBar.frame = CGRect(x: UIScreen.main.bounds.width-180,//self.view.bounds.width-180,
                                               y: 20,
-                                              width: 180,
+                                              width: 200,
                                               height: self.view.bounds.height)
             })
             sidebarIsVisible = true
@@ -164,7 +164,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 //self.sideBar.transform = CGAffineTransform(translationX: self.view.bounds.width, y: 0)
                 self.sideBar.frame = CGRect(x: UIScreen.main.bounds.width,//self.view.bounds.width,
                                             y: 20,
-                                            width: 180,
+                                            width: 200,
                                             height: self.view.bounds.height)
             })
             //self.sideBar.isHidden = true
