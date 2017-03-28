@@ -94,83 +94,12 @@ class AddAdVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
                 
                 imageBtnV5.setImage(choosenImage, for: .normal)
             }
-
-            //Old code when we had 1 button the first one and 5 image views
-            /*
-            if changeButtonImage == true {
-                addImageBTN.setImage(choosenImage, for: .normal)
-            
-            } else {
-                
-                if imageBtnV1.image == UIImage(named: "X") { //nil {
-                    imageBtnV1.image = choosenImage
-                } else if imageBtnV2.image == nil {
-                    
-                    imageBtnV2.image = imageBtnV1.image
-                    imageBtnV1.image = choosenImage
-                }else if imageBtnV3.image == UIImage(named: "X") {
-                    
-                    imageBtnV3.image = imageBtnV2.image
-                    imageBtnV2.image = imageBtnV1.image
-                    imageBtnV1.image = choosenImage
-                } else if imageBtnV4.image == UIImage(named: "X") {
-                    
-                    imageBtnV4.image = imageBtnV3.image
-                    imageBtnV3.image = imageBtnV2.image
-                    imageBtnV2.image = imageBtnV1.image
-                    imageBtnV1.image = choosenImage
-                }else if imageBtnV5.image == UIImage(named: "X") {
-                    
-                    imageBtnV5.image = imageBtnV4.image
-                    imageBtnV4.image = imageBtnV3.image
-                    imageBtnV3.image = imageBtnV2.image
-                    imageBtnV2.image = imageBtnV1.image
-                    imageBtnV1.image = choosenImage
-                    changeButtonImage = true
-                }
-            }
-            */
-            
-            /*
-            if addImageBTN.imageView?.image == nil {
-                //addImageBTN.imageView?.image = choosenImage
-                addImageBTN.setImage(choosenImage, for: .normal)
-                choosenBtnImage = true
-            } else {
-                if imageV1.image == nil {
-                    imageV1.image = addImageBTN.currentImage
-                    addImageBTN.setImage(choosenImage, for: .normal)
-                } else if imageV2.image == nil {
-                    imageV2.image = imageV1.image
-                    imageV1.image = addImageBTN.currentImage
-                    addImageBTN.setImage(choosenImage, for: .normal)
-                } else if imageV3.image == nil {
-                    imageV3.image = imageV2.image
-                    imageV2.image = imageV1.image
-                    imageV1.image = addImageBTN.currentImage
-                    addImageBTN.setImage(choosenImage, for: .normal)
-                } else if imageV4.image == nil {
-                    imageV4.image = imageV3.image
-                    imageV3.image = imageV2.image
-                    imageV2.image = imageV1.image
-                    imageV1.image = addImageBTN.currentImage
-                    addImageBTN.setImage(choosenImage, for: .normal)
-                } else if imageV5.image == nil {
-                    imageV5.image = imageV4.image
-                    imageV4.image = imageV3.image
-                    imageV3.image = imageV2.image
-                    imageV2.image = imageV1.image
-                    imageV1.image = addImageBTN.currentImage
-                    addImageBTN.setImage(choosenImage, for: .normal)
-                }
-            }*/
         } else {
             print("SMGL: a valid image wasn't selected INFO:- \(info)")
             errorAlertSMGL(titleString: "Error",errorString: "a valid image wasn't selected")
         }
         imagePicker.dismiss(animated: true, completion: nil)
     } //when we select image dismiss the image picker
-    
     
     @IBAction func postBtnTapped(_ sender: Any) {
         guard let title = titleTextField.text, title != "" else {
@@ -290,6 +219,13 @@ class AddAdVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         let xImage = UIImage(named: "X")
         
         addImageBTN.setImage(addImage, for: .normal)
+
+        let allButtons = [imageBtnV1, imageBtnV2, imageBtnV3, imageBtnV4, imageBtnV5]
+        for Btn in allButtons {
+            Btn.setImage(xImage, for: .normal)
+            Btn.backgroundColor = UIColor.white
+        }
+        /*
         imageBtnV1.setImage(xImage, for: .normal)
         imageBtnV2.setImage(xImage, for: .normal)
         imageBtnV3.setImage(xImage, for: .normal)
@@ -300,7 +236,7 @@ class AddAdVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         imageBtnV3.backgroundColor = UIColor.white
         imageBtnV4.backgroundColor = UIColor.white
         imageBtnV5.backgroundColor = UIColor.white
-
+        */
 
     }
 
