@@ -12,7 +12,7 @@ import Alamofire
 import AlamofireImage
 import Firebase
 
-//Not Using It Now - Not Using It Now - Not Using It Now - Not Using It Now - Not Using It Now
+//Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It
 
 class PostCell: UITableViewCell, DTImageScrollViewDatasource {
 
@@ -31,7 +31,7 @@ class PostCell: UITableViewCell, DTImageScrollViewDatasource {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
+    //Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It
     func configuerCell(post: Post){
         self.post = post
         print("SMGL: 1")
@@ -111,7 +111,7 @@ class PostCell: UITableViewCell, DTImageScrollViewDatasource {
             self.imageScrollView.placeholderImage = UIImage(named: "placeholder")
         }
     }
-    
+    //Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It
     func loadTheImages(){
 
     }
@@ -138,7 +138,7 @@ class PostCell: UITableViewCell, DTImageScrollViewDatasource {
         print("SMGL: 4")
         return imagess[index]
     }
- 
+    //Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It
     //SMGL
     func imageURL(index: Int) -> URL {
         
