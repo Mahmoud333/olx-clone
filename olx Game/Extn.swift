@@ -7,15 +7,14 @@
 //
 
 import UIKit
-
+/*
 extension UIScrollViewDelegate {
     var lastContentOffsetSMGL: CGPoint {
         get{ return lastContentOffsetSMGL ?? CGPoint(x: 0, y: 0)}
         set{ lastContentOffsetSMGL = newValue}
     }
-
 }
-
+*/
 extension UITextField: UITextFieldDelegate {
     func addDoneBtnToolbarSMGL() {
         var doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
