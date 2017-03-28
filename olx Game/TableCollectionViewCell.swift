@@ -8,6 +8,7 @@
 
 import UIKit
 
+//collection cell inside tableview cell
 class TableCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
