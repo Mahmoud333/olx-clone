@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0C59FA32ABC49B43FE5DB63B /* Pods_olx_GameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE59BE05D57B539C47AC55D /* Pods_olx_GameTests.framework */; };
+		1E11ABAC1EB00AF600F49BAF /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E11AB9F1EB00AF600F49BAF /* csv.swift */; };
+		1E11ABAD1EB00AF600F49BAF /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11ABA31EB00AF600F49BAF /* GeoFire.m */; };
+		1E11ABAE1EB00AF600F49BAF /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11ABA51EB00AF600F49BAF /* GFBase32Utils.m */; };
+		1E11ABAF1EB00AF600F49BAF /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11ABA71EB00AF600F49BAF /* GFGeoHash.m */; };
+		1E11ABB01EB00AF600F49BAF /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11ABA91EB00AF600F49BAF /* GFGeoHashQuery.m */; };
+		1E11ABB11EB00AF600F49BAF /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11ABAB1EB00AF600F49BAF /* GFQuery.m */; };
+		1E3010F11EA756740019806A /* ChooseLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3010F01EA756740019806A /* ChooseLocationVC.swift */; };
+		1E34AC471EB3DB64007D393A /* SectionLabelTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34AC461EB3DB63007D393A /* SectionLabelTableView.swift */; };
 		1E3709B61E89E9A000FEFA6A /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709AA1E89E9A000FEFA6A /* AkiraTextField.swift */; };
 		1E3709B71E89E9A000FEFA6A /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709AB1E89E9A000FEFA6A /* HoshiTextField.swift */; };
 		1E3709B81E89E9A000FEFA6A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E3709AC1E89E9A000FEFA6A /* Info.plist */; };
@@ -21,7 +29,9 @@
 		1E3709C01E89E9A000FEFA6A /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709B51E89E9A000FEFA6A /* YoshikoTextField.swift */; };
 		1E3709C21E8A05DC00FEFA6A /* sideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709C11E8A05DB00FEFA6A /* sideBar.swift */; };
 		1E3709C41E8A16D100FEFA6A /* sideBarCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3709C31E8A16D100FEFA6A /* sideBarCells.swift */; };
+		1E37121F1E8C8A9700328F98 /* addAdImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E37121E1E8C8A9700328F98 /* addAdImageCell.swift */; };
 		1E4087CE1E820EE200589BD8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4087CD1E820EE100589BD8 /* Post.swift */; };
+		1E52D50F1EA5CB5100D064D8 /* LocationV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52D50E1EA5CB5000D064D8 /* LocationV.swift */; };
 		1E560B8B1E79860E000A3D4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E560B8A1E79860E000A3D4C /* AppDelegate.swift */; };
 		1E560B8D1E79860E000A3D4C /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E560B8C1E79860E000A3D4C /* SignInVC.swift */; };
 		1E560B901E79860E000A3D4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E560B8E1E79860E000A3D4C /* Main.storyboard */; };
@@ -35,7 +45,13 @@
 		1E560BB71E79CC2B000A3D4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E560BB61E79CC2B000A3D4C /* GoogleService-Info.plist */; };
 		1E5EDE061E8683C900F48760 /* tableUICollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5EDE051E8683C900F48760 /* tableUICollectionCell.swift */; };
 		1E5EDE091E8685DB00F48760 /* TableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5EDE081E8685DB00F48760 /* TableCollectionViewCell.swift */; };
+		1E6131D41EB2D9F700BDB976 /* AddAdTESTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6131D31EB2D9F600BDB976 /* AddAdTESTVC.swift */; };
+		1E6131D61EB2DF2600BDB976 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6131D51EB2DF2500BDB976 /* TextFieldCell.swift */; };
+		1E6131D81EB2DF3F00BDB976 /* TextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6131D71EB2DF3F00BDB976 /* TextViewCell.swift */; };
+		1E6131DA1EB2DF7500BDB976 /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6131D91EB2DF7500BDB976 /* MapCell.swift */; };
+		1E7230651E8DAC2F00353856 /* FancyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7230641E8DAC2D00353856 /* FancyTextView.swift */; };
 		1E7C3A2A1E8309FB000A2C57 /* AddAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7C3A291E8309FA000A2C57 /* AddAdVC.swift */; };
+		1E880D3C1E9AA36900D7E375 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E880D3B1E9AA36800D7E375 /* ProfileVC.swift */; };
 		1EC11C711E7A3DCF00FF1DAF /* Extn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC11C701E7A3DCF00FF1DAF /* Extn.swift */; };
 		1EFF0AFD1E7C034C0095CD8E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF0AFC1E7C034C0095CD8E /* DataService.swift */; };
 		1EFF0AFF1E7C61DB0095CD8E /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF0AFE1E7C61DB0095CD8E /* FeedVC.swift */; };
@@ -54,6 +70,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E11AB9B1EB00AF600F49BAF /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		1E11AB9C1EB00AF600F49BAF /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		1E11AB9D1EB00AF600F49BAF /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		1E11AB9E1EB00AF600F49BAF /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		1E11AB9F1EB00AF600F49BAF /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		1E11ABA01EB00AF600F49BAF /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		1E11ABA21EB00AF600F49BAF /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		1E11ABA31EB00AF600F49BAF /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		1E11ABA41EB00AF600F49BAF /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		1E11ABA51EB00AF600F49BAF /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		1E11ABA61EB00AF600F49BAF /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		1E11ABA71EB00AF600F49BAF /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		1E11ABA81EB00AF600F49BAF /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		1E11ABA91EB00AF600F49BAF /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		1E11ABAA1EB00AF600F49BAF /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		1E11ABAB1EB00AF600F49BAF /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		1E11ABB81EB00CAA00F49BAF /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		1E3010F01EA756740019806A /* ChooseLocationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseLocationVC.swift; sourceTree = "<group>"; };
+		1E34AC461EB3DB63007D393A /* SectionLabelTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionLabelTableView.swift; sourceTree = "<group>"; };
 		1E3709AA1E89E9A000FEFA6A /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
 		1E3709AB1E89E9A000FEFA6A /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 		1E3709AC1E89E9A000FEFA6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,7 +103,9 @@
 		1E3709B51E89E9A000FEFA6A /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
 		1E3709C11E8A05DB00FEFA6A /* sideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideBar.swift; sourceTree = "<group>"; };
 		1E3709C31E8A16D100FEFA6A /* sideBarCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideBarCells.swift; sourceTree = "<group>"; };
+		1E37121E1E8C8A9700328F98 /* addAdImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addAdImageCell.swift; sourceTree = "<group>"; };
 		1E4087CD1E820EE100589BD8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1E52D50E1EA5CB5000D064D8 /* LocationV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationV.swift; sourceTree = "<group>"; };
 		1E560B871E79860E000A3D4C /* olx Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "olx Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E560B8A1E79860E000A3D4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E560B8C1E79860E000A3D4C /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -86,7 +123,13 @@
 		1E560BB61E79CC2B000A3D4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1E5EDE051E8683C900F48760 /* tableUICollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableUICollectionCell.swift; sourceTree = "<group>"; };
 		1E5EDE081E8685DB00F48760 /* TableCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCollectionViewCell.swift; sourceTree = "<group>"; };
+		1E6131D31EB2D9F600BDB976 /* AddAdTESTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAdTESTVC.swift; sourceTree = "<group>"; };
+		1E6131D51EB2DF2500BDB976 /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		1E6131D71EB2DF3F00BDB976 /* TextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewCell.swift; sourceTree = "<group>"; };
+		1E6131D91EB2DF7500BDB976 /* MapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
+		1E7230641E8DAC2D00353856 /* FancyTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyTextView.swift; sourceTree = "<group>"; };
 		1E7C3A291E8309FA000A2C57 /* AddAdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAdVC.swift; sourceTree = "<group>"; };
+		1E880D3B1E9AA36800D7E375 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		1EC11C701E7A3DCF00FF1DAF /* Extn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extn.swift; sourceTree = "<group>"; };
 		1EFF0AFC1E7C034C0095CD8E /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		1EFF0AFE1E7C61DB0095CD8E /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -128,6 +171,45 @@
 				7BD9954410E813E511C7C1C5 /* Pods-olx GameTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		1E11AB991EB00AF600F49BAF /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				1E11AB9A1EB00AF600F49BAF /* API */,
+				1E11AB9F1EB00AF600F49BAF /* csv.swift */,
+				1E11ABA01EB00AF600F49BAF /* GeoFire-Prefix.pch */,
+				1E11ABA11EB00AF600F49BAF /* Implementation */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		1E11AB9A1EB00AF600F49BAF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1E11AB9B1EB00AF600F49BAF /* GeoFire.h */,
+				1E11AB9C1EB00AF600F49BAF /* GFCircleQuery.h */,
+				1E11AB9D1EB00AF600F49BAF /* GFQuery.h */,
+				1E11AB9E1EB00AF600F49BAF /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1E11ABA11EB00AF600F49BAF /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				1E11ABA21EB00AF600F49BAF /* GeoFire+Private.h */,
+				1E11ABA31EB00AF600F49BAF /* GeoFire.m */,
+				1E11ABA41EB00AF600F49BAF /* GFBase32Utils.h */,
+				1E11ABA51EB00AF600F49BAF /* GFBase32Utils.m */,
+				1E11ABA61EB00AF600F49BAF /* GFGeoHash.h */,
+				1E11ABA71EB00AF600F49BAF /* GFGeoHash.m */,
+				1E11ABA81EB00AF600F49BAF /* GFGeoHashQuery.h */,
+				1E11ABA91EB00AF600F49BAF /* GFGeoHashQuery.m */,
+				1E11ABAA1EB00AF600F49BAF /* GFQuery+Private.h */,
+				1E11ABAB1EB00AF600F49BAF /* GFQuery.m */,
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		1E3709A91E89E99F00FEFA6A /* TextFieldEffects */ = {
@@ -184,6 +266,11 @@
 				1E560B931E79860E000A3D4C /* LaunchScreen.storyboard */,
 				1E560BB61E79CC2B000A3D4C /* GoogleService-Info.plist */,
 				1E560B961E79860E000A3D4C /* Info.plist */,
+				1E11AB991EB00AF600F49BAF /* GeoFire */,
+				1E11ABB81EB00CAA00F49BAF /* BridgingHeader.h */,
+				1E6131D51EB2DF2500BDB976 /* TextFieldCell.swift */,
+				1E6131D71EB2DF3F00BDB976 /* TextViewCell.swift */,
+				1E6131D91EB2DF7500BDB976 /* MapCell.swift */,
 			);
 			path = "olx Game";
 			sourceTree = "<group>";
@@ -210,11 +297,14 @@
 			children = (
 				1E560BAE1E7990A0000A3D4C /* FancyButton.swift */,
 				1E560BB41E799613000A3D4C /* FancyTextField.swift */,
+				1E7230641E8DAC2D00353856 /* FancyTextView.swift */,
 				1EFF0B001E7C75550095CD8E /* PostCell.swift */,
 				1E5EDE051E8683C900F48760 /* tableUICollectionCell.swift */,
-				1E5EDE071E86858900F48760 /* View Insde View */,
+				1E5EDE071E86858900F48760 /* Collection Cell Inside Table Cell */,
 				1E3709C11E8A05DB00FEFA6A /* sideBar.swift */,
 				1E3709C31E8A16D100FEFA6A /* sideBarCells.swift */,
+				1E37121E1E8C8A9700328F98 /* addAdImageCell.swift */,
+				1E52D50E1EA5CB5000D064D8 /* LocationV.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -225,6 +315,9 @@
 				1E560B8C1E79860E000A3D4C /* SignInVC.swift */,
 				1EFF0AFE1E7C61DB0095CD8E /* FeedVC.swift */,
 				1E7C3A291E8309FA000A2C57 /* AddAdVC.swift */,
+				1E880D3B1E9AA36800D7E375 /* ProfileVC.swift */,
+				1E3010F01EA756740019806A /* ChooseLocationVC.swift */,
+				1E6131D31EB2D9F600BDB976 /* AddAdTESTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -235,16 +328,17 @@
 				1E560BB01E7991D3000A3D4C /* DropShadow Protocol.swift */,
 				1E560BB21E799265000A3D4C /* Constants.swift */,
 				1EC11C701E7A3DCF00FF1DAF /* Extn.swift */,
+				1E34AC461EB3DB63007D393A /* SectionLabelTableView.swift */,
 			);
 			name = Utli;
 			sourceTree = "<group>";
 		};
-		1E5EDE071E86858900F48760 /* View Insde View */ = {
+		1E5EDE071E86858900F48760 /* Collection Cell Inside Table Cell */ = {
 			isa = PBXGroup;
 			children = (
 				1E5EDE081E8685DB00F48760 /* TableCollectionViewCell.swift */,
 			);
-			name = "View Insde View";
+			name = "Collection Cell Inside Table Cell";
 			sourceTree = "<group>";
 		};
 		1EFF0AFB1E7C032C0095CD8E /* Services */ = {
@@ -472,28 +566,44 @@
 			files = (
 				1EFF0AFF1E7C61DB0095CD8E /* FeedVC.swift in Sources */,
 				1E3709BF1E89E9A000FEFA6A /* YokoTextField.swift in Sources */,
+				1E34AC471EB3DB64007D393A /* SectionLabelTableView.swift in Sources */,
 				1E5EDE061E8683C900F48760 /* tableUICollectionCell.swift in Sources */,
+				1E11ABB11EB00AF600F49BAF /* GFQuery.m in Sources */,
+				1E880D3C1E9AA36900D7E375 /* ProfileVC.swift in Sources */,
+				1E11ABAE1EB00AF600F49BAF /* GFBase32Utils.m in Sources */,
+				1E11ABB01EB00AF600F49BAF /* GFGeoHashQuery.m in Sources */,
 				1E4087CE1E820EE200589BD8 /* Post.swift in Sources */,
+				1E37121F1E8C8A9700328F98 /* addAdImageCell.swift in Sources */,
 				1E3709B71E89E9A000FEFA6A /* HoshiTextField.swift in Sources */,
 				1E560BB31E799265000A3D4C /* Constants.swift in Sources */,
 				1E7C3A2A1E8309FB000A2C57 /* AddAdVC.swift in Sources */,
+				1E52D50F1EA5CB5100D064D8 /* LocationV.swift in Sources */,
 				1E3709C21E8A05DC00FEFA6A /* sideBar.swift in Sources */,
+				1E11ABAF1EB00AF600F49BAF /* GFGeoHash.m in Sources */,
 				1E3709BB1E89E9A000FEFA6A /* KaedeTextField.swift in Sources */,
 				1E560B8D1E79860E000A3D4C /* SignInVC.swift in Sources */,
 				1E560BB11E7991D3000A3D4C /* DropShadow Protocol.swift in Sources */,
 				1E560B8B1E79860E000A3D4C /* AppDelegate.swift in Sources */,
 				1E3709BC1E89E9A000FEFA6A /* MadokaTextField.swift in Sources */,
+				1E6131D61EB2DF2600BDB976 /* TextFieldCell.swift in Sources */,
+				1E11ABAC1EB00AF600F49BAF /* csv.swift in Sources */,
 				1EC11C711E7A3DCF00FF1DAF /* Extn.swift in Sources */,
 				1E3709B61E89E9A000FEFA6A /* AkiraTextField.swift in Sources */,
+				1E6131D41EB2D9F700BDB976 /* AddAdTESTVC.swift in Sources */,
+				1E6131DA1EB2DF7500BDB976 /* MapCell.swift in Sources */,
 				1E3709BA1E89E9A000FEFA6A /* JiroTextField.swift in Sources */,
 				1E3709C41E8A16D100FEFA6A /* sideBarCells.swift in Sources */,
 				1E3709BE1E89E9A000FEFA6A /* TextFieldEffects.swift in Sources */,
 				1E3709C01E89E9A000FEFA6A /* YoshikoTextField.swift in Sources */,
+				1E11ABAD1EB00AF600F49BAF /* GeoFire.m in Sources */,
 				1E560BAF1E7990A0000A3D4C /* FancyButton.swift in Sources */,
 				1E560BB51E799613000A3D4C /* FancyTextField.swift in Sources */,
+				1E3010F11EA756740019806A /* ChooseLocationVC.swift in Sources */,
 				1E3709B91E89E9A000FEFA6A /* IsaoTextField.swift in Sources */,
+				1E7230651E8DAC2F00353856 /* FancyTextView.swift in Sources */,
 				1E5EDE091E8685DB00F48760 /* TableCollectionViewCell.swift in Sources */,
 				1EFF0AFD1E7C034C0095CD8E /* DataService.swift in Sources */,
+				1E6131D81EB2DF3F00BDB976 /* TextViewCell.swift in Sources */,
 				1EFF0B011E7C75560095CD8E /* PostCell.swift in Sources */,
 				1E3709BD1E89E9A000FEFA6A /* MinoruTextField.swift in Sources */,
 			);
@@ -645,6 +755,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mahmoud-SMGL.olx-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "olx Game/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -660,6 +771,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mahmoud-SMGL.olx-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "olx Game/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

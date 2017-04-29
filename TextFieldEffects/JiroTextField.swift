@@ -40,7 +40,7 @@ import UIKit
      
      This property determines the size of the placeholder label relative to the font size of the text field.
      */
-    @IBInspectable dynamic open var placeholderFontScale: CGFloat = 0.65 {
+    @IBInspectable dynamic open var placeholderFontScale: CGFloat = 0.80 {  //0.65
         didSet {
             updatePlaceholder()
         }
@@ -61,12 +61,14 @@ import UIKit
     
     private let borderThickness: CGFloat = 2
     private let placeholderInsets = CGPoint(x: 8, y: 8)
-    private let textFieldInsets = CGPoint(x: 8, y: 12)
+    private let textFieldInsets = CGPoint(x: 8, y: 12) //x: 8 ,y: 12
     private let borderLayer = CALayer()
     
     // MARK: - TextFieldEffects
     
     override open func drawViewsForRect(_ rect: CGRect) {
+        print("SMGL: JiroTextField drawViewsForRect")
+
         let frame = CGRect(origin: CGPoint.zero, size: CGSize(width: rect.size.width, height: rect.size.height))
         
         placeholderLabel.frame = frame.insetBy(dx: placeholderInsets.x, dy: placeholderInsets.y)
@@ -80,6 +82,7 @@ import UIKit
     }
     
     override open func animateViewsForTextEntry() {
+        print("SMGL: JiroTextField animateViewsForTextEntry")
         borderLayer.frame.origin = CGPoint(x: 0, y: font!.lineHeight)
         
         UIView.animate(withDuration: 0.2, delay: 0.3, usingSpringWithDamping: 0.8, initialSpringVelocity: 1.0, options: .beginFromCurrentState, animations: ({
@@ -93,6 +96,7 @@ import UIKit
     }
     
     override open func animateViewsForTextDisplay() {
+        print("SMGL: JiroTextField animateViewsForTextDisplay")
         if text!.isEmpty {
             UIView.animate(withDuration: 0.35, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 2.0, options: .beginFromCurrentState, animations: ({
                 self.layoutPlaceholderInTextRect()
@@ -108,11 +112,13 @@ import UIKit
     // MARK: - Private
     
     private func updateBorder() {
+        print("SMGL: JiroTextField updateBorder")
         borderLayer.frame = rectForBorder(borderThickness, isFilled: false)
         borderLayer.backgroundColor = borderColor?.cgColor
     }
     
     private func updatePlaceholder() {
+        print("SMGL: JiroTextField updatePlaceholder")
         placeholderLabel.text = placeholder
         placeholderLabel.textColor = placeholderColor
         placeholderLabel.sizeToFit()
@@ -124,11 +130,13 @@ import UIKit
     }
     
     private func placeholderFontFromFont(_ font: UIFont) -> UIFont! {
+        print("SMGL: JiroTextField placeholderFontFromFont")
         let smallerFont = UIFont(name: font.fontName, size: font.pointSize * placeholderFontScale)
         return smallerFont
     }
     
     private func rectForBorder(_ thickness: CGFloat, isFilled: Bool) -> CGRect {
+        print("SMGL: JiroTextField rectForBorder")
         if isFilled {
             return CGRect(origin: CGPoint(x: 0, y: placeholderLabel.frame.origin.y + placeholderLabel.font.lineHeight), size: CGSize(width: frame.width, height: frame.height))
         } else {
@@ -137,7 +145,8 @@ import UIKit
     }
     
     private func layoutPlaceholderInTextRect() {
-        
+        print("SMGL: JiroTextField layoutPlaceholderInTextRect")
+
         if text!.isNotEmpty {
             return
         }
@@ -157,13 +166,29 @@ import UIKit
     }
     
     // MARK: - Overrides
-            
+    /*
     override open func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.offsetBy(dx: textFieldInsets.x, dy: textFieldInsets.y)
+        return bounds.offsetBy(dx: textFieldInsets.x, dy: textFieldInsets.y) //Main
+        //return bounds.insetBy(dx: 500, dy: 350) //Ours
     }
     
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.offsetBy(dx: textFieldInsets.x, dy: textFieldInsets.y)
+        return bounds.offsetBy(dx: textFieldInsets.x, dy: textFieldInsets.y) //Main
+        //return bounds.insetBy(dx: 500, dy: 350)//Ours
+    }*/
+    
+    //sort the inside out [text is on the border and textfield size shrinked on the text]
+    //placeholder text on top off the border
+    override open func textRect(forBounds bounds: CGRect) -> CGRect {
+        print("SMGL: JiroTextField textRect")
+        return bounds.insetBy(dx: 10, dy: 5) //10 from the left
+    }
+    
+    //when you typing the text in
+    override open func editingRect(forBounds bounds: CGRect) -> CGRect {
+        print("SMGL: JiroTextField editingRect")
+
+        return bounds.insetBy(dx: 10, dy: 5) //10 from the left
     }
 
 }

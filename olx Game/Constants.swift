@@ -9,6 +9,7 @@
 import UIKit
 
 struct C {
+    static var ourGreen = UIColor.white
     
     static let SHADOW_GRAY: CGFloat = 120.0/255.0 //Color For Shadow
     
@@ -16,6 +17,7 @@ struct C {
     
     enum Segues: String {
         case FromSignInToFeed = "goToFeed"
+        case ProfileMapVToChooseLocationVC = "ProfileMapVToChooseLocationVC"
     }
     
     enum indentifiers: String {
@@ -23,6 +25,8 @@ struct C {
         case TableCellUICollection = "tableCell1"
         case TableCellUICollectionCell = "tableCell2"
         case SidebarCell = "SidebarCell"
+        
+        case addAdImageCell = "addAdImageCell"
     }
     
 }

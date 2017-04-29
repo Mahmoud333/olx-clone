@@ -89,5 +89,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is required to choose where is your item or the place you will sell it in. if you don&apos;t want to sell it then keep your dang location to yourself.</string>
 </dict>
 </plist>

@@ -12,7 +12,7 @@ import Alamofire
 import AlamofireImage
 import Firebase
 
-//Not Using It Now - Not Using It Now - Not Using It Now - Not Using It Now - Not Using It Now
+//Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It
 
 class PostCell: UITableViewCell, DTImageScrollViewDatasource {
 
@@ -31,7 +31,7 @@ class PostCell: UITableViewCell, DTImageScrollViewDatasource {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
+    //Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It
     func configuerCell(post: Post){
         self.post = post
         print("SMGL: 1")
@@ -120,7 +120,7 @@ class PostCell: UITableViewCell, DTImageScrollViewDatasource {
         super.didMoveToSuperview()
 
     }
-
+    //Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It - Stopped Using It
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

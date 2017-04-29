@@ -8,6 +8,7 @@
 
 import UIKit
 
+//collection cell inside tableview cell
 class TableCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
@@ -27,13 +28,13 @@ class TableCollectionViewCell: UICollectionViewCell {
         
         imageView.image = img
         titleLabel.text = post.title
-        
+        /*
         let price = Double(post.price)
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = NumberFormatter.Style.decimal
         numberFormatter.string(from: NSNumber(value: price!))
-        
-        priceLabel.text = "\(String(describing: numberFormatter))"
+        */
+        priceLabel.text = post.price
         createdInLabel.text = post.createdIn
         locationLabel.text = post.location
     }

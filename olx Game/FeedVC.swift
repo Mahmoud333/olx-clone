@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SwiftKeychainWrapper
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -29,24 +30,21 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         let view1 = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 20))
         view1.backgroundColor = HeaderView.backgroundColor
+        C.ourGreen = HeaderView.backgroundColor!
         view1.layer.zPosition = 6
         view.addSubview(view1)
         
         //headerView
         HeaderView.layer.zPosition = 2
         
-        
         //sidebar
-        sideBar.frame = CGRect(x: UIScreen.main.bounds.width, y: 20, width: 180, height: self.view.bounds.height)
+        sideBar.frame = CGRect(x: UIScreen.main.bounds.width, y: 20, width: 200, height: self.view.bounds.height-50)
         sideBar.layer.zPosition = 4
         //sideBar.center.y = self.view.center.y
         //sideBar.isHidden == true
         self.view.addSubview(sideBar)
-        
 
-
-        
-        
+                
         //observe our posts by url of our posts database
         //get array of posts
         //DataService.ds.REF_POSTS.observeSingleEvent(of: .value, with: { (snapshots) in
@@ -182,8 +180,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 //self.sideBar.transform = CGAffineTransform(translationX: self.view.bounds.width-180, y: 0)
                 self.sideBar.frame = CGRect(x: UIScreen.main.bounds.width-180,//self.view.bounds.width-180,
                                               y: 20,
-                                              width: 180,
-                                              height: self.view.bounds.height)
+                                              width: 200,
+                                              height: self.view.bounds.height-50)
             })
             sidebarIsVisible = true
         } else {
@@ -193,11 +191,22 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 //self.sideBar.transform = CGAffineTransform(translationX: self.view.bounds.width, y: 0)
                 self.sideBar.frame = CGRect(x: UIScreen.main.bounds.width,//self.view.bounds.width,
                                             y: 20,
-                                            width: 180,
-                                            height: self.view.bounds.height)
+                                            width: 200,
+                                            height: self.view.bounds.height-50)
             })
             //self.sideBar.isHidden = true
             sidebarIsVisible = false
+        }
+    }
+    //Add ad but now we use it as logout button
+    
+    @IBAction func addAd(_ sender: Any) {
+        do {
+            KeychainWrapper.standard.removeObject(forKey: C.KEY_UID)
+            try FIRAuth.auth()?.signOut()
+            dismiss(animated: true, completion: nil)
+        } catch let error as NSError {
+            errorAlertSMGL(titleString: "Error", errorString: error.localizedDescription)
         }
     }
 }
@@ -231,9 +240,7 @@ extension FeedVC {
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as? PostCell {
-            
             print("SMGl: willDisplay Cell \(indexPath.row)")
-
         }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

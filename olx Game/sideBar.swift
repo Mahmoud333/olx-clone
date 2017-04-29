@@ -18,6 +18,8 @@ class sideBar: UIView, UITableViewDelegate, UITableViewDataSource, DropShadow {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.layer.cornerRadius = 12
+        
         tableView.dataSource = self
         tableView.delegate = self
         self.addDropShadowSMGL()

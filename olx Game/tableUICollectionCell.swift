@@ -67,6 +67,7 @@ class tableUICollectionCell: UITableViewCell, UICollectionViewDelegate, UICollec
                     }
                 } else { //not cached
                     
+                    
                     let url = URL(string: imageURL)
                     let ref = FIRStorage.storage().reference(forURL: imageURL)  //the url doesn't change but have to do it like this to do it and get photo
                     print("SMGL: 11")
@@ -78,30 +79,40 @@ class tableUICollectionCell: UITableViewCell, UICollectionViewDelegate, UICollec
                     
                     
                     //imagesURLS.append(ref)
-                    ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in //download img
+
                         
-                        print("SMGL: 111")
-                        
-                        if error != nil {
-                            print("SMGL: Unable to download image from firebase storage")
-                        } else {
-                            print("SMGL: Image Downloaded from firebase storage")
+                    //DispatchQueue.global(qos: DispatchQoS.QoSClass.userInitiated).async { [unowned self] in
+
+                        ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in //download img (2 * 1024 * 1024)
                             
-                            if let imageData = data {
-                                if let img = UIImage(data: imageData) {
-                                    
-                                    self.images.append(img)
-                                    FeedVC.imageCache.setObject(img, forKey: imageURL as NSString)//cache it
-                                    
-                                    print("SMGL: downloaded image and appended in array and cached")
-                                    
-                                    if self.images.count == self.post.imageUrls.count {
-                                        self.collectionView.reloadData()
+                            print("SMGL: in downloading image completion")
+                            
+                            if error != nil {
+                                print("SMGL: Unable to download image from firebase storage")
+                            } else {
+                                print("SMGL: Image Downloaded from firebase storage")
+                                
+                                if let imageData = data {
+                                    if let img = UIImage(data: imageData) {
+                                        
+                                        //DispatchQueue.main.async { [unowned self] in
+                                            
+                                            
+                                            self.images.append(img)
+                                            FeedVC.imageCache.setObject(img, forKey: imageURL as NSString)//cache it
+                                            
+                                            print("SMGL: downloaded image and appended in array and cached")
+                                            
+                                            if self.images.count == self.post.imageUrls.count {
+                                                self.collectionView.reloadData()
+                                            }
+                                        //}
                                     }
                                 }
                             }
-                        }
-                    })
+                        })
+                    //}
+
                     }
                 }
             }

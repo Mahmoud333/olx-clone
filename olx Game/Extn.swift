@@ -102,5 +102,25 @@ extension UIViewController {
          dateTimeComponents.second // 17
          */
     }
+    
+    func getYear() -> Int {
+        let currentDateTime = Date()
+        
+        let userCalender = Calendar.current
+        
+        let requestedComponents: Set<Calendar.Component> = [
+            .year,
+            .month,
+            .day,
+            .hour,
+            .minute,
+            .second
+        ]
+        
+        //get the components
+        let dateTimeComponents = userCalender.dateComponents(requestedComponents, from: currentDateTime)
+        
+        return dateTimeComponents.year!
+    }
 }
 
